@@ -5,9 +5,11 @@
       .titulo-principal.color-acento-contenido
         .titulo-principal__numero
           span 1
-        h1 Titulo de primer nivel
-        
+        h1 Inteligencia artificial: concepto y características
 
+      Separador
+      #t_1_1.titulo-segundo.color-acento-contenido(data-aos="fade-left")
+        h2 1.1 Aplicaciones de la inteligencia artificial
   </template>
 
 <script>
@@ -19,4 +21,3 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>

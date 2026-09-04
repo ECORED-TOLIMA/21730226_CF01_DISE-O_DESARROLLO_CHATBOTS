@@ -1,1 +1,1 @@
-module.exports = 'Ecored Base PKG'
+module.exports = 'Fundamentos de chatbots y diseño de flujos conversacionales'
