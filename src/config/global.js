@@ -1,18 +1,18 @@
 export default {
   global: {
-    Name: 'Fundamentos de chatbots y diseño de flujos conversacionales',
+    Name: 'Fundamentos de <em>chatbots</em> y diseño de flujos conversacionales',
     Description:
-      'Este componente aborda los fundamentos de la inteligencia artificial y el procesamiento del lenguaje natural como base de los chatbots; presenta sus tipos, ventajas y aplicaciones en la atención al cliente; orienta la selección de plataformas y la creación de flujos de conversación con voz, tono, personalidad y palabras clave para resolver problemas reales.',
+      'Este componente aborda los fundamentos de la inteligencia artificial y el procesamiento del lenguaje natural como base de los <em>chatbots</em>; presenta sus tipos, ventajas y aplicaciones en la atención al cliente; orienta la selección de plataformas y la creación de flujos de conversación con voz, tono, personalidad y palabras clave para resolver problemas reales.',
     imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.png',
     fondoBannerPrincipal: '@/assets/curso/portada/fondo-banner-principal.png',
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: '@/assets/curso/portada/banner-principal-decorativo-1.svg',
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-2.svg',
       },
       {
         clases: ['banner-principal-decorativo-2', 'd-none', 'd-lg-block'],
-        imagen: '@/assets/curso/portada/banner-principal-decorativo-2.svg',
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-1.svg',
       },
     ],
   },
@@ -64,7 +64,7 @@ export default {
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Chatbots',
+        titulo: '<em>Chatbots</em>',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -74,7 +74,7 @@ export default {
           },
           {
             numero: '3.2',
-            titulo: 'Tipos de chatbots',
+            titulo: 'Tipos de <em>chatbots</em>',
             hash: 't_3_2',
           },
         ],
@@ -82,7 +82,7 @@ export default {
       {
         nombreRuta: 'tema4',
         numero: '4',
-        titulo: 'Ventajas y aplicaciones de los chatbots',
+        titulo: 'Ventajas y aplicaciones de los <em>chatbots</em>',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -100,7 +100,7 @@ export default {
       {
         nombreRuta: 'tema5',
         numero: '5',
-        titulo: 'Herramientas de software para el desarrollo de chatbots',
+        titulo: 'Herramientas de <em>software</em> para el desarrollo de <em>chatbots</em>',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -118,7 +118,7 @@ export default {
       {
         nombreRuta: 'tema6',
         numero: '6',
-        titulo: 'Frameworks de diseño conversacional',
+        titulo: '<em>Frameworks</em> de diseño conversacional',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -214,47 +214,47 @@ export default {
     {
       termino: 'Entidad',
       significado:
-        'Dato concreto que el usuario menciona y que el chatbot debe extraer del mensaje, como ciudad, fecha o número de documento.',
+        'Dato concreto que el usuario menciona y que el <em>chatbot</em> debe extraer del mensaje, como ciudad, fecha o número de documento.',
     },
     {
       termino: 'Escalamiento',
       significado:
-        'Transferencia de la conversación de un chatbot a un agente humano.',
+        'Transferencia de la conversación de un <em>chatbot</em> a un agente humano.',
     },
     {
       termino: 'Flujo de conversación',
       significado:
-        'Secuencia de mensajes y respuestas que sigue el chatbot durante una sesión con el usuario.',
+        'Secuencia de mensajes y respuestas que sigue el <em>chatbot</em> durante una sesión con el usuario.',
     },
     {
-      termino: 'Framework de diseño conversacional',
+      termino: '<em>Framework</em> de diseño conversacional',
       significado:
         'Conjunto de principios, metodologías y componentes técnicos que orientan la creación de la experiencia conversacional.',
     },
     {
-      termino: 'Large Language Model',
+      termino: '<em>Large Language Model</em>',
       significado:
         'Modelo de lenguaje de gran escala, como GPT, Claude o Gemini, capaz de generar texto en lenguaje natural.',
     },
     {
       termino: 'Mensaje de respaldo',
       significado:
-        'Respuesta que entrega el chatbot cuando no logra comprender la intención del usuario.',
+        'Respuesta que entrega el <em>chatbot</em> cuando no logra comprender la intención del usuario.',
     },
     {
-      termino: 'Plataforma low-code',
+      termino: 'Plataforma <em>low-code</em>',
       significado:
-        'Herramienta que combina interfaces visuales con pequeños fragmentos de código para construir chatbots.',
+        'Herramienta que combina interfaces visuales con pequeños fragmentos de código para construir <em>chatbots</em>.',
     },
     {
-      termino: 'Plataforma no-code',
+      termino: 'Plataforma <em>no-code</em>',
       significado:
-        'Herramienta que permite construir chatbots mediante interfaces gráficas, sin necesidad de programar.',
+        'Herramienta que permite construir <em>chatbots</em> mediante interfaces gráficas, sin necesidad de programar.',
     },
     {
-      termino: 'Software as a service',
+      termino: '<em>Software as a service</em>',
       significado:
-        'Modelo de distribución de software en el que las aplicaciones se alojan en la nube y se acceden por internet.',
+        'Modelo de distribución de <em>software</em> en el que las aplicaciones se alojan en la nube y se acceden por internet.',
     },
     {
       termino: 'Token',
@@ -284,7 +284,7 @@ export default {
     },
     {
       referencia:
-        'Pérez, M. (2021). Diseño de chatbots: una guía práctica para crear conversaciones efectivas. Anaya Multimedia.',
+        'Pérez, M. (2021). Diseño de <em>chatbots</em>: una guía práctica para crear conversaciones efectivas. Anaya Multimedia.',
       link: '',
     },
     {

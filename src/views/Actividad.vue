@@ -1,13 +1,10 @@
 <template lang="pug">
-  .curso-main-container.pb-3
-    BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
-    .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-      // Para cuestionario usar: <ActividadController :cuestionario="cuestionario"/>
-      // Para parrafo usar: <ActividadController :parrafo="parrafo"/>
-      #Actividad                
-      <ActividadController :cuestionario="cuestionario"/>
-  
-  </template>
+.curso-main-container.pb-3
+  BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+    #Actividad
+      ActividadController(:cuestionario="cuestionario")
+</template>
 
 <script>
 import ActividadController from '@ecored-sena/boulder-kit/plugin/components/actividad/ActividadController.vue'
@@ -19,10 +16,10 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Comprendiendo el desarrollo de <em>chatbots</em>',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> Evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b>Objetivo:</b> evaluar la comprensión de los fundamentos necesarios para el desarrollo de <em>chatbots</em>, mediante la identificación y aplicación de elementos clave para su diseño y funcionamiento.',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO.',
@@ -30,477 +27,686 @@ export default {
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+            '¿En qué año se acuñó formalmente el término inteligencia artificial?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: '1950.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'Seleccionar y editar capas que identifican márgenes, pistas y componentes.',
+              texto: '1956.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Ajustar automáticamente las pistas de cada componente.',
+              texto: '1966.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Modificar el tamaño de los componentes.',
+              texto: '1997.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_correcto:
+            '¡Muy bien! El término inteligencia artificial fue acuñado en 1956 por John McCarthy durante la Conferencia de Dartmouth, considerada el punto de partida formal de la disciplina.',
           mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 2,
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: '<em>Layer</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: '<em>Auto</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: '<em>Text</em>',
-              esCorrecta: true,
-            },
-            {
-              id: 'd',
-              texto: '<em>Route</em>',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Para borrar conexiones.',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto:
-                'Para cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'Para agregar nuevas capas.',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'Para resaltar conexiones de pines.',
-              esCorrecta: true,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 4,
-          texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: '<em>Text</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: '<em>Layer</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: '<em>Board</em>',
-              esCorrecta: true,
-            },
-            {
-              id: 'd',
-              texto: '<em>Route</em>',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
+            'Según Russell y Norvig, ¿cómo se define un sistema inteligente?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
               texto:
-                'Enrutar manualmente las pistas que no se ajustaron automáticamente.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Resaltar las conexiones de los pines.',
+                'Un programa informático que ejecuta instrucciones previamente establecidas para realizar tareas específicas de manera automática.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto:
+                'Un sistema que percibe su entorno mediante sensores y actúa sobre él mediante actuadores para alcanzar un objetivo.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'Crear una nueva capa en el diseño.',
+              texto:
+                'Un sistema que requiere supervisión humana permanente para tomar decisiones.',
               esCorrecta: false,
             },
             {
               id: 'd',
               texto:
-                'Cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+                'Un computador con alta capacidad de procesamiento que utiliza grandes cantidades de datos para realizar operaciones numéricas y ejecutar programas especializados.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! Un sistema inteligente percibe su entorno mediante sensores y actúa sobre él mediante actuadores para alcanzar un objetivo.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 3,
+          texto:
+            '¿Cuál de las siguientes es una característica que distingue a los sistemas de inteligencia artificial?',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Capacidad de aprendizaje a partir de datos y experiencia.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Funcionamiento exclusivo en computadoras de gran escala.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Necesidad de instrucciones explícitas para cada caso.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Imposibilidad de adaptarse a situaciones nuevas.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Muy bien! Los sistemas de inteligencia artificial se distinguen por la capacidad de aprendizaje, la adaptabilidad, el razonamiento, la percepción y la autonomía, siempre dentro de los límites definidos por sus diseñadores.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 4,
+          texto: '¿Qué es el procesamiento del lenguaje natural?',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Una técnica de programación que solo aplica al idioma inglés.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'La rama de la inteligencia artificial que estudia la interacción entre las computadoras y el lenguaje humano.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Un método para acelerar la velocidad de los procesadores.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Un protocolo de comunicación entre servidores.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Muy bien! El procesamiento del lenguaje natural es la rama de la inteligencia artificial que estudia la interacción entre las computadoras y el lenguaje humano, con el objetivo de lograr que las máquinas comprendan, interpreten y generen lenguaje en forma escrita u oral.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 5,
+          texto:
+            '¿Cuál de los siguientes principios del procesamiento del lenguaje natural consiste en dividir el texto en unidades mínimas de análisis?',
+          imagen: '@/assets/actividad/imagen5.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Lematización.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Tokenización.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Análisis sintáctico.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Reconocimiento de entidades.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Muy bien! La tokenización es el principio que consiste en la división del texto en unidades mínimas de análisis (palabras, frases o caracteres).',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 6,
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué disciplinas combina el procesamiento del lenguaje natural?',
+          imagen: '@/assets/actividad/imagen6.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Borrar componentes.',
+              texto: 'Matemáticas, química y biología.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Ajustar automáticamente las pistas en cada componente.',
+              texto: 'Lingüística, informática y estadística.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Crear nuevas conexiones de pines.',
+              texto: 'Sociología, psicología y antropología.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Seleccionar y editar capas.',
+              texto: 'Física, electrónica e ingeniería mecánica.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! El procesamiento del lenguaje natural combina aportes de la lingüística, que proporciona las reglas y estructuras del lenguaje; la informática, que provee los algoritmos para procesar texto; y la estadística, que permite identificar patrones en grandes volúmenes de datos lingüísticos.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 7,
           texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Cuál fue el primer <em>chatbot</em> reconocido y en qué año se desarrolló?',
+          imagen: '@/assets/actividad/imagen7.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Colocar los componentes en un solo bloque.',
+              texto: 'ALICE, en 1995.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Agrupar los componentes en bloques funcionales.',
+              texto:
+                'ELIZA, desarrollado en 1966 por Joseph Weizenbaum en el MIT.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Alinear todos los terminales a la derecha.',
+              texto: 'PARRY, en 1972.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Colocar los terminales lo más alejados posible.',
+              texto: 'SmarterChild, en 2001.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! El primer <em>chatbot</em> reconocido fue ELIZA, desarrollado en 1966 por Joseph Weizenbaum en el MIT. ELIZA simulaba un terapeuta y demostró por primera vez la viabilidad de una conversación entre humano y máquina.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 8,
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Cuántas etapas componen el ciclo general de funcionamiento de un <em>chatbot</em>?',
+          imagen: '@/assets/actividad/imagen8.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Dos etapas: entrada y salida.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Tres etapas: entrada, procesamiento y salida.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+              texto:
+                'Cuatro etapas: recepción del mensaje, comprensión, procesamiento y respuesta.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto:
+                'Cinco etapas: recepción del mensaje, comprensión, procesamiento y respuesta, entrenamiento.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! El funcionamiento de un <em>chatbot</em> sigue un ciclo de cuatro etapas en las que el sistema recibe la consulta, identifica la intención, consulta la base de conocimiento y entrega la respuesta correspondiente.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 9,
           texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Qué tipo de <em>chatbot</em> sigue un guion predefinido con árboles de decisión y palabras clave que activan respuestas específicas?',
+          imagen: '@/assets/actividad/imagen9.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: '<em>Chatbot</em> generativo.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: '<em>Chatbot</em> conversacional con inteligencia artificial.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: '<em>Chatbot</em> basado en reglas.',
               esCorrecta: true,
             },
+            {
+              id: 'd',
+              texto: '<em>Chatbot</em> híbrido.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! El <em>chatbot</em> basado en reglas sigue un guion predefinido con árboles de decisión, donde el usuario elige opciones de un menú o palabras clave activan respuestas específicas.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 10,
           texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Cuál de las siguientes es una ventaja principal de los <em>chatbots</em> para las organizaciones?',
+          imagen: '@/assets/actividad/imagen10.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Reemplazo total del talento humano de la organización.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Disponibilidad permanente.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Eliminación de la necesidad de bases de datos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Garantía de cero errores en cualquier escenario.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! Una de las ventajas principales de los <em>chatbots</em> es la disponibilidad permanente, ya que atienden consultas en cualquier momento sin depender de horarios laborales.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 11,
           texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
+            'En el sector banca y finanzas, ¿cuál es una aplicación común de los <em>chatbots</em>?',
+          imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Reemplazo de los gerentes bancarios.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto:
+                'Consulta de saldo, transferencias, bloqueo de tarjetas y asesoría sobre productos.',
               esCorrecta: true,
             },
+            {
+              id: 'c',
+              texto: 'Sustitución del sistema central bancario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Cálculo automático de impuestos del país.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! En el sector banca y finanzas, los <em>chatbots</em> se aplican para consulta de saldo, transferencias, bloqueo de tarjetas y asesoría sobre productos, brindando disponibilidad permanente y mayor seguridad transaccional.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 12,
           texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
+            '¿Qué tipo de plataforma de <em>chatbots</em> permite construir soluciones mediante interfaces gráficas de arrastrar y soltar, sin escribir código?',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Plataforma de código.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Plataforma <em>low-code</em>.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Plataforma <em>no-code</em>.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Plataforma híbrida.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Muy bien! Las plataformas <em>no-code</em> permiten construir <em>chatbots</em> mediante interfaces gráficas de arrastrar y soltar, sin escribir una sola línea de código. Son ideales para usuarios sin formación técnica.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 13,
+          texto:
+            '¿Cuál de las siguientes plataformas es de código abierto y está basada en Python para construir <em>chatbots</em> conversacionales con control total del modelo?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Landbot.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'ManyChat.',
               esCorrecta: false,
             },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 13,
-          texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
-          barajarRespuestas: true,
-          opciones: [
             {
-              id: 'a',
-              texto: 'Verdadero',
+              id: 'c',
+              texto: 'Rasa.',
               esCorrecta: true,
             },
             {
-              id: 'b',
-              texto: 'Falso',
+              id: 'd',
+              texto: 'Tidio.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! Rasa es una plataforma de código y de código abierto, desarrollada como marco de trabajo en Python para <em>chatbots</em> conversacionales que ofrece control total del modelo conversacional.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 14,
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
+            'Para una pequeña empresa que desea construir un <em>chatbot</em> simple de preguntas frecuentes en su sitio <em>web</em>, ¿qué tipo de plataforma resulta más adecuada?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto:
+                'Una plataforma basada en código que requiera programación avanzada.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Una plataforma <em>no-code</em> como Tidio o Landbot.',
               esCorrecta: true,
             },
+            {
+              id: 'c',
+              texto:
+                'Un sistema empresarial costoso con integraciones complejas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Un servidor propio con infraestructura dedicada.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! Para una pequeña empresa con preguntas frecuentes en su sitio <em>web</em>, las plataformas <em>no-code</em> como Tidio o Landbot resultan más adecuadas por su modalidad sin código, sus planes gratuitos disponibles y su instalación rápida.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 15,
-          texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+          texto: '¿Qué es un <em>framework</em> de diseño conversacional?',
+          imagen: '@/assets/actividad/imagen5.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Un programa para compilar el código del <em>chatbot</em>.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto:
+                'Un conjunto de principios, metodologías y componentes técnicos.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Un sistema operativo especializado para ejecutar <em>chatbots</em>.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Un lenguaje de programación específico para <em>chatbots</em>.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Muy bien! Un <em>framework</em> de diseño conversacional es un conjunto de principios, metodologías y componentes técnicos que orientan la creación de la experiencia conversacional de un <em>chatbot</em>, definiendo cómo debe ser la conversación desde el punto de vista del usuario.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 16,
+          texto:
+            '¿Cuál de los siguientes es un método utilizado en el diseño centrado en el usuario para <em>chatbots</em>?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Diagrama de Gantt.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Mapas de conversación, diálogos de muestra, persona del bot y casos de uso.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Pruebas unitarias de software.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Análisis financiero del retorno de inversión.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Muy bien! El diseño centrado en el usuario emplea métodos como mapas de conversación, diálogos de muestra, persona del bot, casos de uso y flujos felices y de excepción, los cuales orientan la creación de la experiencia conversacional desde la perspectiva del usuario.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 17,
+          texto:
+            '¿Cuáles son los tres elementos fundamentales en los que se estructuran los datos conversacionales de un <em>chatbot</em>?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Variables, funciones y operadores.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Tablas, gráficos e informes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Intención, entidad y frase de entrenamiento.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Saludo, despedida y respuesta de error.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Muy bien! Los datos conversacionales se estructuran en tres elementos fundamentales: la intención (lo que el usuario quiere lograr), la entidad (dato concreto que el <em>chatbot</em> debe extraer) y la frase de entrenamiento (ejemplo de cómo el usuario podría expresar la intención).',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 18,
+          texto:
+            '¿Qué característica deben tener las frases de entrenamiento de una intención?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Ser idénticas entre sí.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Contener únicamente palabras clave.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Representar diferentes formas de expresar una misma necesidad.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Corresponder siempre a una sola estructura de oración.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Muy bien! Una buena práctica es que debe ser variada y representar diferentes formas de expresar una misma necesidad.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 19,
+          texto:
+            'En el diseño conversacional de un <em>chatbot</em>, ¿qué se entiende por "voz" del <em>chatbot</em>?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'El sonido grabado que reproduce el <em>chatbot</em> al usuario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'El conjunto estable de características de cómo se expresa el <em>chatbot</em>.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'La velocidad con que el <em>chatbot</em> envía mensajes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'El idioma en que el <em>chatbot</em> está programado.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Muy bien! La voz del <em>chatbot</em> constituye el conjunto estable de características de cómo se expresa el <em>chatbot</em> y no cambia entre conversaciones. Refleja los valores de la organización y debe ser coherente con la identidad de marca.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 20,
+          texto: '¿Qué diferencia existe entre la voz y el tono de un <em>chatbot</em>?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'No existe diferencia, son sinónimos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'La voz es escrita y el tono es hablado.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'La voz es estable y el tono varía según el contexto del usuario.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto:
+                'La voz aplica solo a <em>chatbots</em> de texto y el tono solo a <em>chatbots</em> de voz.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Muy bien! La voz constituye el conjunto estable de características de cómo se expresa el <em>chatbot</em> y no cambia entre conversaciones; el tono, en cambio, es la variación de la voz según el contexto o la emoción del usuario, como ser empático ante una falla o entusiasta al confirmar una compra.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
       ],
-      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
+      mensaje_final_aprobado:
+        'Ha superado la actividad y demuestra sólidos conocimientos sobre el componente formativo.',
       mensaje_final_reprobado:
-        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
-    },
-    parrafo: {
-      tema: 'Comprendiendo el diseño de presupuestos y estrategias de ahorro',
-      titulo: 'Completar frases',
-      introduccion:
-        '<b> Objetivo:</b> identificar conceptos clave relacionados con el presupuesto personal, la cultura del ahorro y la planificación financiera.',
-      instruccion:
-        'Complete correctamente los enunciados con la palabra que falta según los contenidos estudiados en el componente formativo.',
-      imagen: '@/assets/actividad/imagen1.png',
-      barajarPreguntas: true,
-      textos: [
-        {
-          id: 1,
-          texto:
-            'El [respuesta] personal es una herramienta que permite proyectar ingresos y egresos para mantener la estabilidad económica.',
-          respuesta: 'presupuesto',
-        },
-        {
-          id: 2,
-          texto:
-            'La constancia en el cumplimiento del presupuesto refleja un alto nivel de [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 3,
-          texto:
-            'Ahorrar no es lo que sobra, sino lo que se [respuesta] guardar antes de gastar.',
-          respuesta: 'planifica',
-        },
-        {
-          id: 4,
-          texto:
-            'Un gasto innecesario que puede eliminarse sin afectar la calidad de vida básica se denomina gasto [respuesta].',
-          respuesta: 'discrecional',
-        },
-        {
-          id: 5,
-          texto:
-            'La cultura del ahorro promueve el uso responsable de los [respuesta] disponibles.',
-          respuesta: 'recursos',
-        },
-        {
-          id: 6,
-          texto:
-            'El estado de [respuesta] personales permite analizar la relación entre ingresos y egresos en un periodo determinado.',
-          respuesta: 'resultados',
-        },
-        {
-          id: 7,
-          texto:
-            'Cuando los ingresos son mayores que los egresos se generan una [respuesta] que puede destinarse al ahorro.',
-          respuesta: 'utilidad',
-        },
-        {
-          id: 8,
-          texto:
-            'Uno de los beneficios de ejecutar un presupuesto es la reducción del [respuesta] financiero.',
-          respuesta: 'estrés',
-        },
-        {
-          id: 9,
-          texto:
-            'Evitar gastos impulsivos y mantener límites presupuestales refleja [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 10,
-          texto:
-            'Contar con un fondo de [respuesta] permite enfrentar gastos inesperados sin afectar el presupuesto.',
-          respuesta: 'emergencia',
-        },
-      ],
+        'No ha superado la actividad. Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
     },
   }),
 }
