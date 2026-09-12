@@ -22,7 +22,7 @@
         img(src="@/assets/curso/temas/t6/img1.png" alt="")
       .col-lg-7.mb-4.mb-lg-0
         p Un #[em framework] de diseño conversacional es un conjunto de principios, metodologías y componentes técnicos que orientan la creación de la experiencia conversacional de un #[em chatbot]. A diferencia de las plataformas, que constituyen la infraestructura técnica, los marcos de trabajo definen cómo debe ser la conversación desde el punto de vista del usuario: qué tono usar, cómo recuperarse ante errores, cómo guiar al usuario hacia su objetivo y cómo manejar las despedidas.
-        p.mb-0 Marcos reconocidos como el Conversation Design #[em Framework] de Google o las guías de diseño conversacional de Microsoft, proponen una estructura de trabajo que parte del entendimiento del usuario, define los casos de uso prioritarios, escribe los diálogos y, finalmente, los implementa en la plataforma técnica seleccionada. Estos marcos comparten principios fundamentales: comenzar por el usuario, escribir antes de programar, iterar a partir de pruebas reales y considerar la conversación como un producto en sí misma.
+        p.mb-0 Marcos reconocidos como el Conversation Design Framework de Google o las guías de diseño conversacional de Microsoft, proponen una estructura de trabajo que parte del entendimiento del usuario, define los casos de uso prioritarios, escribe los diálogos y, finalmente, los implementa en la plataforma técnica seleccionada. Estos marcos comparten principios fundamentales: comenzar por el usuario, escribir antes de programar, iterar a partir de pruebas reales y considerar la conversación como un producto en sí misma.
       
     p.mb-4 La metodología típica de un marco de diseño conversacional contempla 5 fases:
     SlyderF.mb-4(columnas="col-lg-6 col-xl-4")
@@ -82,8 +82,8 @@
       h5 Figura 2.
       span Manejo de errores y situaciones imprevistas en el diseño conversacional
     figure.mb-4
-      img.d-none.d-md-block(src="@/assets/curso/temas/t6/img9.svg" alt="Diagrama sobre el manejo de errores y situaciones imprevistas en el diseño conversacional")
-      img.d-block.d-md-none(src="@/assets/curso/temas/t6/img9_1.svg" alt="Diagrama sobre el manejo de errores y situaciones imprevistas en el diseño conversacional")
+      img.d-none.d-md-block(src="@/assets/curso/temas/t6/img9.svg" alt="Figura 2 que presenta el manejo de errores y situaciones imprevistas en el diseño conversacional mediante tres escenarios: cuando el chatbot no comprende al usuario, cuando este cambia abruptamente de tema y cuando expresa enojo o frustración. La imagen muestra ejemplos de respuestas y acciones para orientar al usuario, retomar conversaciones y ofrecer escalamiento a un agente.")
+      img.d-block.d-md-none(src="@/assets/curso/temas/t6/img9_1.svg" alt="Figura 2 que presenta el manejo de errores y situaciones imprevistas en el diseño conversacional mediante tres escenarios: cuando el chatbot no comprende al usuario, cuando este cambia abruptamente de tema y cuando expresa enojo o frustración. La imagen muestra ejemplos de respuestas y acciones para orientar al usuario, retomar conversaciones y ofrecer escalamiento a un agente.")
     p.mb-4 Resumiendo la imagen anterior, se pueden presentar los siguientes tres escenarios y sus métodos de respuesta:
     .tarjeta--container.row.mb-4
       .col-lg.tarjeta.bg01.p-5
@@ -120,12 +120,13 @@
             .col-lg-4.d-none.d-lg-block
               img(src="@/assets/curso/temas/t6/img13.svg" alt="")
             .col-lg-8
-              p.mb-0.p-4 Pódcast
+              
               .tarjeta.clr--pink.p-4.rounded-0.h-100
-                .tarjeta.bg-white.p-4
+                h5 Pódcast
+                .tarjeta.bg-white.p-3
                   TarjetaAudio.color-acento-botones.mb-3(
                   texto="Conversaciones que responden: diseñando interacciones con <em>chatbots</em> "
-                  :audio="require_src('@/assets/actividad/audio/success.mp3')"
+                  :audio="require_src('@/assets/curso/temas/audio/Podcast_CF01.mp3')"
               )
                   .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
 </template>

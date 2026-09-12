@@ -46,7 +46,8 @@
       .col-lg-4.col-8.mb-4.mb-lg-0.p-4.p-lg-0
         img(src="@/assets/curso/temas/t8/img5.png" alt="")
       .col-lg-8.p-4.p-lg-0
-        p.mb-0 Una herramienta útil para definir la voz y la personalidad del chatbot es la matriz de valores. Esta permite ubicar la identidad conversacional entre diferentes características opuestas; por ejemplo, formal frente a cercano o técnico frente a simple. La posición seleccionada orienta las decisiones de redacción y ayuda a mantener consistencia en los diferentes mensajes. Una marca puede utilizar una comunicación cercana y sencilla en situaciones cotidianas, pero adoptar un tono más formal cuando necesita explicar información legal, financiera o normativa.
+        .p-4
+          p.mb-0 Una herramienta útil para definir la voz y la personalidad del #[em chatbot] es la matriz de valores. Esta permite ubicar la identidad conversacional entre diferentes características opuestas; por ejemplo, formal frente a cercano o técnico frente a simple. La posición seleccionada orienta las decisiones de redacción y ayuda a mantener consistencia en los diferentes mensajes. Una marca puede utilizar una comunicación cercana y sencilla en situaciones cotidianas, pero adoptar un tono más formal cuando necesita explicar información legal, financiera o normativa.
     p.mb-4 Basado en lo anterior, se sintetizan los principales atributos conversacionales del #[em chatbot], junto con su definición y un ejemplo de aplicación. Esta información permite diferenciar la voz, el tono y la personalidad que intervienen en la construcción de una experiencia conversacional coherente:
     
     .row.justify-content-center.mb-4
@@ -103,7 +104,7 @@
             img(src="@/assets/curso/temas/t8/img11.svg" alt="")
           .tarjeta.tarjeta--colsecundario.h-100
             .p-4
-              h5.mb-0.text-center Hasta qué hora atienden
+              h5.mb-0.text-center ¿Hasta qué hora atienden?
       .col-lg-3.mb-4.mb-lg-0
         .tarjeta-avatar-b
           .tarjeta-avatar-b__img
@@ -121,7 +122,8 @@
     p.mb-4 Por su parte, la intención representa aquello que el usuario desea lograr mediante su mensaje. En un #[em chatbot] bancario, por ejemplo, pueden definirse intenciones como consultar el saldo, realizar una transferencia, bloquear una tarjeta o revisar los movimientos de una cuenta. Cada intención puede asociarse con respuestas, preguntas adicionales o acciones específicas que permitan atender la solicitud.
     .row.align-items-center.justify-content-center.bg01.mb-4
       .col-lg-7.mb-4.mb-lg-0.p-4.p-lg-0.order-2.order-lg-1
-        p Las frases de entrenamiento son ejemplos de las diferentes maneras en que un usuario puede expresar una misma intención. Como referencia inicial, puede construirse un conjunto de 10 a 15 frases por intención, procurando que exista variedad en vocabulario, estructura, extensión y nivel de formalidad. Esta cantidad puede ajustarse según la complejidad de cada intención y los resultados obtenidos durante las pruebas.
+        .p-4
+          p.mb-0 Las frases de entrenamiento son ejemplos de las diferentes maneras en que un usuario puede expresar una misma intención. Como referencia inicial, puede construirse un conjunto de 10 a 15 frases por intención, procurando que exista variedad en vocabulario, estructura, extensión y nivel de formalidad. Esta cantidad puede ajustarse según la complejidad de cada intención y los resultados obtenidos durante las pruebas.
       .col-lg-5.col-8.mb-4.mb-lg-0.order-1.order-lg-2
         img(src="@/assets/curso/temas/t8/img14.png" alt="")
     p.mb-4 También conviene incorporar variaciones habituales del lenguaje, como errores ortográficos frecuentes, abreviaturas, expresiones coloquiales y modismos regionales. Los usuarios no siempre escriben de manera formal o siguen una estructura predefinida; por ello, contemplar estas variaciones ayuda a reducir errores de comprensión y favorece una interacción más natural.

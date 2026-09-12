@@ -20,7 +20,7 @@
     .bloque-texto-g.bloque-texto-g--inverso.color-primario.p-3.p-sm-4.p-md-5.mb-4
       .bloque-texto-g__img(role="img" :style="{'background-image': `url(${require_src('@/assets/curso/temas/t5/img2.png')})`}")
       .bloque-texto-g__texto.p-4
-        p.mb-0 Una herramienta de #[em software] para el desarrollo de #[em chatbots] es un sistema que provee la infraestructura necesaria para construir, desplegar y mantener un chatbot. Estas herramientas se ofrecen como plataformas en la nube, en modalidad #[em software as a service] o como bibliotecas de código abierto que se integran a un proyecto de #[em software] propio. La modalidad en la nube facilita la puesta en marcha rápida sin necesidad de gestionar servidores; la modalidad de código abierto, en cambio, ofrece mayor control y personalización a costa de mayor complejidad técnica.
+        p.mb-0 Una herramienta de #[em software] para el desarrollo de #[em chatbots] es un sistema que provee la infraestructura necesaria para construir, desplegar y mantener un #[em chatbot]. Estas herramientas se ofrecen como plataformas en la nube, en modalidad #[em software as a service] o como bibliotecas de código abierto que se integran a un proyecto de #[em software] propio. La modalidad en la nube facilita la puesta en marcha rápida sin necesidad de gestionar servidores; la modalidad de código abierto, en cambio, ofrece mayor control y personalización a costa de mayor complejidad técnica.
     p.mb-4 Las plataformas modernas se clasifican según el nivel de programación que requieren del usuario:
     .BGF01.px-5.p-5.mb-4
       .tarjeta.bgwhite.p-4
@@ -69,7 +69,7 @@
             td Combina #[em chat] en vivo con #[em chatbots] para sitios #[em web] y comercio electrónico.
           tr
             td Botpress.
-            td Low-code y código abierto.
+            td #[em Low-code] y código abierto.
             td Plataforma flexible con motor de comprensión integrado, apta para #[em chatbots] conversacionales.
           tr
             td Dialogflow.
@@ -143,13 +143,13 @@
         .row.align-items-center.justify-content-center(titulo="g.")
           .col-lg-6.mb-4.mb-md-0.order-2.order-lg-1
             h5 Conocimientos técnicos del equipo
-            p.mb-0 Es necesario valorar las capacidades del equipo encargado de desarrollar y administrar el #[em chatbot], pues una plataforma no-code requiere conocimientos diferentes a una solución basada en código.
+            p.mb-0 Es necesario valorar las capacidades del equipo encargado de desarrollar y administrar el #[em chatbot], pues una plataforma #[em no-code] requiere conocimientos diferentes a una solución basada en código.
           .col-lg-6.col-8.mb-4.mb-lg-0.order-1.order-lg-2
             img(src="@/assets/curso/temas/t5/img13.png" alt="")
         .row.align-items-center.justify-content-center(titulo="h.")
           .col-lg-6.mb-4.mb-md-0.order-2.order-lg-1
             h5 Seguridad y privacidad
-            p.mb-0 Deben revisarse los requisitos relacionados con la protección de la información y el manejo de datos, especialmente cuando el chatbot se implementa en sectores regulados como la banca o la salud.
+            p.mb-0 Deben revisarse los requisitos relacionados con la protección de la información y el manejo de datos, especialmente cuando el #[em chatbot] se implementa en sectores regulados como la banca o la salud.
           .col-lg-6.col-8.mb-4.mb-lg-0.order-1.order-lg-2
             img(src="@/assets/curso/temas/t5/img14.png" alt="")
     p.mb-4 Es recomendable, antes de comprometerse con una plataforma, realizar pruebas con la versión gratuita o el plan de prueba que la mayoría de los proveedores ofrece. Estas pruebas permiten validar que la plataforma cumple con los requisitos del proyecto, identificar limitaciones que no eran evidentes en la documentación y estimar la curva de aprendizaje del equipo. Saltarse esta fase exploratoria suele llevar a sorpresas costosas en la fase de implementación.
@@ -174,7 +174,7 @@
             th Justificación
         tbody
           tr
-            td Pequeña empresa con preguntas frecuentes en sitio web.
+            td Pequeña empresa con preguntas frecuentes en sitio #[em web].
             td Tidio o Landbot.
             td Modalidad sin código, planes gratuitos disponibles, instalación rápida.
           tr

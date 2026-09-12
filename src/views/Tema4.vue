@@ -65,7 +65,7 @@
         tbody
           tr(v-for="fila in sectores" :key="fila.sector")
             td {{ fila.sector }}
-            td {{ fila.aplicacion }}
+            td(v-html="fila.aplicacion")
             td {{ fila.beneficio }}
     p.mb-4 Como se evidencia en la tabla, los #[em chatbots] se han integrado en sectores que tradicionalmente requerían atención telefónica o presencial intensiva. Su implementación permite optimizar procesos internos y facilitar diferentes servicios de atención, orientación y soporte. Cada aplicación debe responder a las necesidades específicas de la organización y a las características de sus usuarios.
     .row.align-items-stretch.justify-content-center.mb-4
@@ -84,8 +84,11 @@
         TabsA.color-acento-botones.tema4-tabs
           .tarjeta.tema1-destacado.p-4(v-for="item in indicadores.slice(0, 3)" :key="item.titulo" :titulo="item.titulo")
             h5 {{ item.titulo }}
-            p {{ item.descripcion }}
-            p.mb-0 #[strong Valor de referencia:] {{ item.referencia }}
+            p(v-html="item.descripcion")
+            p.mb-0
+              strong Valor de referencia:
+              |  
+              span(v-html="item.referencia")
       .col-lg-3.d-none.d-lg-block
         img(src="@/assets/curso/temas/t4/img7.svg" alt="")
     .row.justify-content-center.align-items-center.mb-4
@@ -95,8 +98,11 @@
         TabsA.color-acento-botones.tema4-tabs
           .tarjeta.tema1-destacado.p-4(v-for="item in indicadores.slice(3)" :key="item.titulo" :titulo="item.titulo")
             h5 {{ item.titulo }}
-            p {{ item.descripcion }}
-            p.mb-0 #[strong Valor de referencia:] {{ item.referencia }}
+            p(v-html="item.descripcion")
+            p.mb-0
+              strong Valor de referencia:
+              |  
+              span(v-html="item.referencia")
     p.mb-4 Más allá del retorno económico directo, la implementación de un #[em chatbot] puede generar beneficios intangibles igualmente importantes. Entre ellos se destacan el posicionamiento de la organización como innovadora y orientada al cliente, la diferenciación frente a competidores que aún no han adoptado la tecnología, la mejora del clima laboral del equipo de atención al cliente al liberarlos de tareas repetitivas, y la generación de aprendizaje organizacional sobre las preferencias y comportamientos de los usuarios.
     .row.justify-content-center.mb-0
       .col-lg-10
@@ -126,7 +132,7 @@ export default {
       {
         sector: 'Salud.',
         aplicacion:
-          'Agendamiento de citas, recordatorios, primer triaje de síntomas, información sobre medicamentos.',
+          'Agendamiento de citas, recordatorios, primer <em>triaje</em> de síntomas, información sobre medicamentos.',
         beneficio: 'Descongestión de líneas y mejor experiencia del paciente.',
       },
       {
@@ -166,7 +172,7 @@ export default {
       {
         titulo: 'Tasa de comprensión',
         descripcion:
-          'Porcentaje de mensajes del usuario que el chatbot interpreta correctamente.',
+          'Porcentaje de mensajes del usuario que el <em>chatbot</em> interpreta correctamente.',
         referencia: 'idealmente superior al 80 %.',
       },
       {
@@ -188,13 +194,14 @@ export default {
       },
       {
         titulo: 'Satisfacción del usuario',
-        descripcion: 'Calificación promedio que los usuarios dan al chatbot.',
+        descripcion:
+          'Calificación promedio que los usuarios dan al <em>chatbot</em>.',
         referencia: 'idealmente superior a 4 sobre 5.',
       },
       {
         titulo: 'Cobertura de intenciones',
         descripcion:
-          'Porcentaje de los temas relevantes que el chatbot atiende.',
+          'Porcentaje de los temas relevantes que el <em>chatbot</em> atiende.',
         referencia: 'crece progresivamente con cada versión.',
       },
     ],

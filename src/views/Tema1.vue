@@ -44,7 +44,7 @@
           p.mb-0(numero="1" titulo="Salud") Diagnóstico médico asistido. <br><br>Ejemplo: detección temprana de cáncer en imágenes radiológicas y análisis de patrones genéticos.
           p.mb-0(numero="2" titulo="Banca") Detección de fraude. <br><br>Ejemplo: análisis de transacciones para identificar comportamientos sospechosos en tiempo real.
           p.mb-0(numero="3" titulo="Comercio") Sistemas de recomendación. <br><br>Ejemplo: sugerencias de productos personalizadas en plataformas de comercio electrónico.
-          p.mb-0(numero="4" titulo="Transporte") Vehículos autónomos. Ejemplo: automóviles con conducción asistida y optimización de rutas logísticas.
+          p.mb-0(numero="4" titulo="Transporte") Vehículos autónomos. <br><br>Ejemplo: automóviles con conducción asistida y optimización de rutas logísticas.
       .col-lg-5.col-8.mb-4.mb-lg-0.order-1.order-lg-2
         img(src="@/assets/curso/temas/t1/img13.png" alt="")
     .row.align-items-center.justify-content-center.mb-4
@@ -73,8 +73,8 @@
           img(:src="hito.imagen" alt="")
         .col-md-10
           h5 {{ hito.titulo }}
-          p.mb-0 {{ hito.texto }}
-</template>
+          p.mb-0(v-html="hito.texto")
+    </template>
 
 <script>
 import img2 from '@/assets/curso/temas/t1/img2.svg'
@@ -175,7 +175,7 @@ export default {
         anio: '1966',
         titulo: 'ELIZA',
         texto:
-          'Primer chatbot: demuestra que una máquina puede sostener una conversación simulada con un humano.',
+          'Primer <em>chatbot</em>: demuestra que una máquina puede sostener una conversación simulada con un humano.',
         imagen: img18,
       },
       {

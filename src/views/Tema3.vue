@@ -13,7 +13,7 @@
     Separador
     #t_3_1.titulo-segundo.color-acento-contenido(data-aos="fade-left")
       h2 3.1 Concepto y principios de funcionamiento
-    p.mb-4 Un #[em chatbot] del inglés #[em chat] (conversación) y #[em bot] (robot) es un programa informático diseñado para mantener una conversación con un usuario humano a través de texto o voz, simulando el comportamiento de una persona. Su objetivo principal es responder preguntas, resolver problemas, brindar información o ejecutar acciones de forma automática y, en lo posible, indistinguible de la atención humana. La interacción se realiza típicamente a través de interfaces de mensajería, sitios #[em web] o asistentes de voz.
+    p.mb-4 Un #[em chatbot], del inglés #[em chat] (conversación) y #[em bot] (robot), es un programa informático diseñado para mantener una conversación con un usuario humano a través de texto o voz, simulando el comportamiento de una persona. Su objetivo principal es responder preguntas, resolver problemas, brindar información o ejecutar acciones de forma automática y, en lo posible, indistinguible de la atención humana. La interacción se realiza típicamente a través de interfaces de mensajería, sitios #[em web] o asistentes de voz.
     .bloque-texto-g.bloque-texto-g--inverso.color-primario.p-3.p-sm-4.p-md-5.mb-4
       .bloque-texto-g__img(role="img" :style="{'background-image': `url(${require_src('@/assets/curso/temas/t3/img2.png')})`}")
       .bloque-texto-g__texto.p-4
@@ -86,13 +86,13 @@
     p.mb-4 La elección del tipo de #[em chatbot] depende del problema que se desea resolver, del presupuesto disponible y del nivel de personalización requerido. Para una empresa pequeña que solo necesita atender preguntas frecuentes, un #[em chatbot] basado en reglas es suficiente y puede implementarse en pocas horas. Para una empresa grande que recibe miles de consultas diarias en lenguaje natural, un #[em chatbot] conversacional o híbrido resulta más adecuado. Los #[em chatbots] generativos, por su parte, requieren mayor inversión, supervisión cuidadosa y consideraciones éticas adicionales debido a su capacidad de generar contenido nuevo.
     p.mb-4 Cabe mencionar la diferencia entre #[em chatbots] y asistentes virtuales, términos que a menudo se usan como sinónimos pero que tienen matices:
     TabsC.color-acento-botones.bg02.mb-4
-      .py-3.py-md-4(titulo="Chatbot")
+      .py-3.py-md-4(titulo="<em>Chatbot</em>")
         .p-3
           .row.align-items-center
             .col-lg-6.mb-4.mb-4.mb-lg-0
               img(src="@/assets/curso/temas/t3/img7.png" alt="")
             .col-lg-6
-              h5 Chatbot
+              h5 #[i Chatbot]
               p.mb-0 Suele estar especializado en un dominio o conjunto de necesidades específicas, como la atención al cliente de una empresa, el agendamiento de citas médicas o el soporte técnico de un producto. Su funcionamiento se orienta a resolver consultas concretas, proporcionar información y ejecutar tareas relacionadas con un servicio determinado.
       .py-3.py-md-4(titulo="Asistente virtual")
         .p-4.bg02
@@ -129,7 +129,7 @@
           p.mb-0 Algunos #[em chatbots] modernos son multimodales: combinan texto, voz, imágenes e incluso video en una misma interacción.
         .cajon.color-primario.p-4.mb-4
           p.mb-0 Los #[em chatbots] generativos ofrecen mayor flexibilidad para producir respuestas y abordar una amplia variedad de solicitudes. Sin embargo, su utilización requiere controles adicionales, debido a la posibilidad de generar información incorrecta, los costos asociados a su operación y la necesidad de establecer criterios claros para su uso en contextos profesionales.
-    p.mb-4 Para complementar esta clasificación, la siguiente tabla compara los principales tipos de #[em chatbots] según criterios que pueden orientar su selección e implementación, como costo, tiempo de puesta en marcha, mantenimiento, personalización, escalabilidad y riesgo de respuestas errónea:
+    p.mb-4 Para complementar esta clasificación, la siguiente tabla compara los principales tipos de #[em chatbots] según criterios que pueden orientar su selección e implementación, como costo, tiempo de puesta en marcha, mantenimiento, personalización, escalabilidad y riesgo de respuestas erróneas:
     .titulo-sexto.color-acento-contenido.mb-3.mt-4
       h5 Tabla 3.
       span Comparación práctica entre tipos de #[em chatbots]
