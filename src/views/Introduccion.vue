@@ -76,8 +76,9 @@
       .col-lg-12
         figure
           .video
-            iframe(width="1331" height="749" src="https://www.youtube.com/embed/j-I5NB9DhdY" title="Chatbot Fundamentals and Conversational Flow Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
-
+            iframe(width="1331" height="749" src="https://www.youtube.com/embed/GK1PmaDh3No" title="Chatbot Fundamentals and Conversational Flow Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
+        figcaption Video 1. Fundamentos de #[i chatbots] y diseño de flujo conversacionales
+          
 </template>
 
 <script>

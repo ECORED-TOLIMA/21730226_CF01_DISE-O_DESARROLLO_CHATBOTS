@@ -14,7 +14,7 @@
     Separador
     #t_7_1.titulo-segundo.color-acento-contenido(data-aos="fade-left")
       h2 7.1 Identificación de fuentes de información
-    p.mb-4 Antes de construir un #[em chatbot] es necesario identificar la información que requerirá para responder a los usuarios. Las fuentes típicas incluyen las bases de datos de productos, los catálogos de servicios, los manuales de procedimientos, las preguntas frecuentes ya documentadas, las transcripciones de #[em chats] con agentes humanos, los correos electrónicos del área de servicio al cliente y los guiones telefónicos del centro de llamadas.
+    p.mb-4 Antes de construir un #[em chatbot], es necesario identificar la información que requerirá para responder a los usuarios. Las fuentes típicas incluyen las bases de datos de productos, los catálogos de servicios, los manuales de procedimientos, las preguntas frecuentes ya documentadas, las transcripciones de #[em chats] con agentes humanos, los correos electrónicos del área de servicio al cliente y los guiones telefónicos del centro de llamadas.
     p.mb-4 Cada fuente aporta información valiosa, pero también presenta limitaciones. Por ejemplo:
     TabsC.color-acento-botones.bg02.mb-4
       .py-3.py-md-4(titulo="Bases de datos")

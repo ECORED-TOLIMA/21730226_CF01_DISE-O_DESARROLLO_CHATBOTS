@@ -103,7 +103,7 @@
               strong Valor de referencia:
               |  
               span(v-html="item.referencia")
-    p.mb-4 Más allá del retorno económico directo, la implementación de un #[em chatbot] puede generar beneficios intangibles igualmente importantes. Entre ellos se destacan el posicionamiento de la organización como innovadora y orientada al cliente, la diferenciación frente a competidores que aún no han adoptado la tecnología, la mejora del clima laboral del equipo de atención al cliente al liberarlos de tareas repetitivas, y la generación de aprendizaje organizacional sobre las preferencias y comportamientos de los usuarios.
+    p.mb-4 Más allá del retorno económico directo, la implementación de un #[em chatbot] puede generar beneficios intangibles igualmente importantes. Entre ellos se destacan el posicionamiento de la organización como innovadora y orientada al cliente, la diferenciación frente a competidores que aún no han adoptado la tecnología, la mejora del clima laboral del equipo de atención al cliente al liberarlos de tareas repetitivas y la generación de aprendizaje organizacional sobre las preferencias y comportamientos de los usuarios.
     .row.justify-content-center.mb-0
       .col-lg-10
         .titulo-pastilla(data-aos="fade-down")

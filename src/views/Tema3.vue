@@ -84,7 +84,7 @@
             td Basado en grandes modelos de lenguaje, genera respuestas en lenguaje natural sin necesidad de un guion previo.
             td Asesoría general, generación de contenido, productividad y educación.
     p.mb-4 La elección del tipo de #[em chatbot] depende del problema que se desea resolver, del presupuesto disponible y del nivel de personalización requerido. Para una empresa pequeña que solo necesita atender preguntas frecuentes, un #[em chatbot] basado en reglas es suficiente y puede implementarse en pocas horas. Para una empresa grande que recibe miles de consultas diarias en lenguaje natural, un #[em chatbot] conversacional o híbrido resulta más adecuado. Los #[em chatbots] generativos, por su parte, requieren mayor inversión, supervisión cuidadosa y consideraciones éticas adicionales debido a su capacidad de generar contenido nuevo.
-    p.mb-4 Cabe mencionar la diferencia entre #[em chatbots] y asistentes virtuales, términos que a menudo se usan como sinónimos pero que tienen matices:
+    p.mb-4 Cabe mencionar la diferencia entre #[em chatbots] y asistentes virtuales, términos que a menudo se usan como sinónimos, pero que tienen matices:
     TabsC.color-acento-botones.bg02.mb-4
       .py-3.py-md-4(titulo="<em>Chatbot</em>")
         .p-3
